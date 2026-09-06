@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fcf8f4">
+    <meta name="description" content="T & Z – ein Himmel voller Wir. Unser Countdown bis zum 12. September 2027 in Kappadokien.">
+    <title>T & Z · Unser Countdown</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23f5dfe6'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='36' fill='%23976076'%3E%E2%99%A1%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./countdown.js" defer></script>
+  </head>
+  <body>
+    <img class="landscape" src="./assets/cappadocia.png" alt="" aria-hidden="true" fetchpriority="high">
+    <div class="paper-grain" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="monogram" href="./" aria-label="T und Z – Startseite"><span>T</span><i>&</i><span>Z</span></a>
+      <p class="place">Kappadokien <span>·</span> Türkei</p>
+      <time class="header-date" datetime="2027-09-12">12 / 09 / 2027</time>
+    </header>
+    <main>
+      <section class="illustration" aria-label="Die kleine Geschichte von T und Z">
+        <div class="scene" id="scene" data-phase="hello">
+          <div class="balloon-lift" aria-hidden="true">
+            <div class="balloon-size" id="balloon-size">
+              <img class="our-balloon" src="./assets/balloon.png" alt="" width="1254" height="1254">
+            </div>
+          </div>
+          <img class="pump-hose" src="./assets/pump-hose.png" alt="" aria-hidden="true" width="1254" height="1254">
+          <div class="love-notes" aria-hidden="true"><span>♡</span><span>♡</span><span>♡</span></div>
+          <div class="couple-position">
+            <div class="couple-motion" id="couple-motion">
+              <div class="couple" id="couple" data-pose="0" role="img" aria-label="Z, das rosa Bärchen, und T, das blaue Bärchen, mit weißen runden Bäuchen und ihren Initialen."></div>
+            </div>
+          </div>
+          <span class="handwritten scene-note" aria-hidden="true">du & ich</span>
+        </div>
+        <div class="animation-controls">
+          <button type="button" id="replay" aria-label="Kuss und Umarmung noch einmal abspielen"><span aria-hidden="true">↺</span> Unser kleiner Anfang</button>
+          <button type="button" id="motion-toggle" aria-pressed="false">Animation pausieren</button>
+        </div>
+        <p class="sr-only" id="scene-status" role="status" aria-live="polite"></p>
+      </section>
+      <section class="countdown-panel" aria-labelledby="heading">
+        <p class="eyebrow">Ein Himmel voller Wir</p>
+        <h1 id="heading">Bis zu unserem<br><em>Für immer.</em></h1>
+        <p class="target-date"><time datetime="2027-09-12">12. September 2027</time><span aria-hidden="true">♡</span></p>
+        <div role="timer" aria-labelledby="heading" aria-live="off">
+          <dl class="countdown">
+            <div class="unit unit-days"><dt>Tage</dt><dd id="days">—</dd></div>
+            <div class="unit unit-hours"><dt>Stunden</dt><dd id="hours">—</dd></div>
+            <div class="unit unit-minutes"><dt>Minuten</dt><dd id="minutes">—</dd></div>
+            <div class="unit unit-seconds"><dt>Sekunden</dt><dd id="seconds">—</dd></div>
+          </dl>
+        </div>
+        <p class="handwritten countdown-note" id="countdown-note">Mit jedem Tag ein bisschen näher.</p>
+        <p class="completion" id="completion" role="status" hidden>Unser Für immer beginnt heute. ♡</p>
+        <noscript><p class="notice">Bitte aktiviere JavaScript für den Countdown und die kleine Bärchengeschichte.</p></noscript>
+      </section>
+    </main>
+    <footer>
+      <span class="footer-note">Für all die kleinen Momente. Und diesen einen großen.</span>
+      <span id="time-label">12.09.2027 · 00:00 Uhr · Deutsche Zeit</span>
+    </footer>
+  </body>
+</html>
